@@ -2,4 +2,4 @@
 
 ### Set up LoopBack with Jeopardy dataset: [https://github.com/emckean/jeopardy-mongo-api](https://github.com/emckean/jeopardy-mongo-api)
 
-### Public endpoints: [https://jma.mybluemix.net/explorer/](https://jma.mybluemix.net/explorer/)
+### Public endpoints: [https://jma.mybluemix.net/api](https://jma.mybluemix.net/api)
