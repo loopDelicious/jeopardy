@@ -1035,22 +1035,18 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/:id",
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 ":id"
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
