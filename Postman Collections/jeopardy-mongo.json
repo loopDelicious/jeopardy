@@ -689,6 +689,38 @@
       "description": "Folder for jeopardy question tests",
       "item": [
         {
+          "_postman_id": "77496778-950e-d976-32f6-bb4b8468b8e4",
+          "name": "Add a new question",
+          "description": "",
+          "item": [
+            {
+              "_postman_id": "bf528add-eeee-2692-e6ed-1424fed79200",
+              "name": "Create a new instance of the model and persist it into the data source.",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "Model instance data"
+                },
+                "url": "{{rootUrl}}/jeopardyQuestions",
+                "description": null
+              },
+              "response": []
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
           "_postman_id": "daab5468-1783-96fa-8922-01a654a91fb6",
           "name": "Find all instances of the model matched by filter from the data source.",
           "request": {
@@ -729,30 +761,6 @@
           "name": "Replace an existing model instance or insert a new one into the data source.",
           "request": {
             "method": "PUT",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "Model instance data"
-            },
-            "url": "{{rootUrl}}/jeopardyQuestions",
-            "description": null
-          },
-          "response": []
-        },
-        {
-          "_postman_id": "bf528add-eeee-2692-e6ed-1424fed79200",
-          "name": "Create a new instance of the model and persist it into the data source.",
-          "request": {
-            "method": "POST",
             "header": [
               {
                 "key": "Accept",
@@ -1188,22 +1196,19 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/count?where={{where}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/count?where={{where}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 "count"
               ],
               "query": [
                 {
                   "key": "where",
-                  "value": "{{where}}"
+                  "value": "{{where}}",
+                  "equals": true
                 }
               ]
             },
@@ -1228,22 +1233,19 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/change-stream?options={{options}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/change-stream?options={{options}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 "change-stream"
               ],
               "query": [
                 {
                   "key": "options",
-                  "value": "{{options}}"
+                  "value": "{{options}}",
+                  "equals": true
                 }
               ]
             },
@@ -1276,7 +1278,7 @@
                 }
               ]
             },
-            "url": "http:///api/jeopardyQuestions/change-stream",
+            "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
             "description": null
           },
           "response": []
@@ -1297,7 +1299,7 @@
               }
             ],
             "body": {},
-            "url": "http:///api/jeopardyQuestions/random",
+            "url": "{{rootUrl}}/jeopardyQuestions/random",
             "description": null
           },
           "response": []
@@ -1318,7 +1320,7 @@
               }
             ],
             "body": {},
-            "url": "http:///api/jeopardyQuestions/categories",
+            "url": "{{rootUrl}}/jeopardyQuestions/categories",
             "description": null
           },
           "response": []
