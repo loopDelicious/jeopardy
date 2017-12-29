@@ -1074,23 +1074,19 @@
               "raw": "Model instance data"
             },
             "url": {
-              "raw": "http:///api/jeopardyQuestions/:id/replace",
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id/replace",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 ":id",
                 "replace"
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
