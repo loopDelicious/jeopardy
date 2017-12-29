@@ -1270,7 +1270,7 @@
                 }
               ]
             },
-            "url": "http:///api/jeopardyQuestions/change-stream",
+            "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
             "description": null
           },
           "response": []
