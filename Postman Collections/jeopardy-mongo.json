@@ -877,23 +877,19 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/:id/exists",
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id/exists",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 ":id",
                 "exists"
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
