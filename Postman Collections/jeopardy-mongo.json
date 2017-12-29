@@ -685,8 +685,8 @@
     },
     {
       "_postman_id": "fb73b594-c754-95b1-72d0-74e65acc8bdc",
-      "name": "jeopardyQuestions copy",
-      "description": "Folder for jeopardyQuestions",
+      "name": "jeopardyQuestions TESTS",
+      "description": "Folder for jeopardy question tests",
       "item": [
         {
           "_postman_id": "daab5468-1783-96fa-8922-01a654a91fb6",
@@ -1357,6 +1357,28 @@
             "description": null
           },
           "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "6fff7529-a150-42ef-85f9-30888455a249",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "70744a1d-3280-4545-be17-84a2b2eaccb0",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
         }
       ]
     }
