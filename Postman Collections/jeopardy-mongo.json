@@ -840,22 +840,19 @@
               "raw": "An object of model property name/value pairs"
             },
             "url": {
-              "raw": "http:///api/jeopardyQuestions/upsertWithWhere?where={{where}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/upsertWithWhere?where={{where}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 "upsertWithWhere"
               ],
               "query": [
                 {
                   "key": "where",
-                  "value": "{{where}}"
+                  "value": "{{where}}",
+                  "equals": true
                 }
               ]
             },
