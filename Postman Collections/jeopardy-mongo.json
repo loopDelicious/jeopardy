@@ -912,9 +912,9 @@
                 ],
                 "body": {},
                 "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
+                  "raw": "{{root_url}}/jeopardyQuestions?filter={{filter}}",
                   "host": [
-                    "{{rootUrl}}"
+                    "{{root_url}}"
                   ],
                   "path": [
                     "jeopardyQuestions"
@@ -922,7 +922,8 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}"
+                      "value": "{{filter}}",
+                      "equals": true
                     }
                   ]
                 },
@@ -1086,291 +1087,291 @@
                 "description": null
               },
               "response": []
-            },
-            {
-              "_postman_id": "f72985f0-0c99-4179-9bfa-7c01f19bf0f6",
-              "name": "Replace attributes for a model instance and persist it into the data source.",
-              "request": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "Model instance data"
-                },
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/:id",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    ":id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "f0472253-0dc3-caa9-7974-fbfb9bdbeb95",
-              "name": "Patch attributes for a model instance and persist it into the data source.",
-              "request": {
-                "method": "PATCH",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "An object of model property name/value pairs"
-                },
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/:id",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    ":id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "30dab66a-eaf7-a362-e8f0-b045744602b2",
-              "name": "Check whether a model instance exists in the data source.",
-              "request": {
-                "method": "HEAD",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/:id",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    ":id"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "d2cce2da-9183-1833-4176-b3ff9622fa85",
-              "name": "Replace attributes for a model instance and persist it into the data source.",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "Model instance data"
-                },
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/:id/replace",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    ":id",
-                    "replace"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "264d5d91-0f27-4f19-ef5f-30a05d9e6b5c",
-              "name": "Update instances of the model matched by {{where}} from the data source.",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "An object of model property name/value pairs"
-                },
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/update?where={{where}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    "update"
-                  ],
-                  "query": [
-                    {
-                      "key": "where",
-                      "value": "{{where}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "c81e6d43-9d83-e1f9-c6d6-dddf6f98145b",
-              "name": "Create a change stream.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/change-stream?options={{options}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    "change-stream"
-                  ],
-                  "query": [
-                    {
-                      "key": "options",
-                      "value": "{{options}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "2f796e36-475b-8d13-3f94-4f374b8adef4",
-              "name": "Create a change stream.",
-              "request": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "urlencoded",
-                  "urlencoded": [
-                    {
-                      "key": "options",
-                      "value": "{{options}}",
-                      "type": "text"
-                    }
-                  ]
-                },
-                "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
-              "name": "Gets one random question",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": "{{rootUrl}}/jeopardyQuestions/random",
-                "description": null
-              },
-              "response": []
             }
           ],
           "_postman_isSubFolder": true
+        },
+        {
+          "_postman_id": "f72985f0-0c99-4179-9bfa-7c01f19bf0f6",
+          "name": "Replace attributes for a model instance and persist it into the data source.",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "Model instance data"
+            },
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{id}}"
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "f0472253-0dc3-caa9-7974-fbfb9bdbeb95",
+          "name": "Patch attributes for a model instance and persist it into the data source.",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "An object of model property name/value pairs"
+            },
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{id}}"
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "30dab66a-eaf7-a362-e8f0-b045744602b2",
+          "name": "Check whether a model instance exists in the data source.",
+          "request": {
+            "method": "HEAD",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{id}}"
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "d2cce2da-9183-1833-4176-b3ff9622fa85",
+          "name": "Replace attributes for a model instance and persist it into the data source.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "Model instance data"
+            },
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id/replace",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                ":id",
+                "replace"
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "{{id}}"
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "264d5d91-0f27-4f19-ef5f-30a05d9e6b5c",
+          "name": "Update instances of the model matched by {{where}} from the data source.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "An object of model property name/value pairs"
+            },
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/update?where={{where}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                "update"
+              ],
+              "query": [
+                {
+                  "key": "where",
+                  "value": "{{where}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "c81e6d43-9d83-e1f9-c6d6-dddf6f98145b",
+          "name": "Create a change stream.",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": {
+              "raw": "{{rootUrl}}/jeopardyQuestions/change-stream?options={{options}}",
+              "host": [
+                "{{rootUrl}}"
+              ],
+              "path": [
+                "jeopardyQuestions",
+                "change-stream"
+              ],
+              "query": [
+                {
+                  "key": "options",
+                  "value": "{{options}}",
+                  "equals": true
+                }
+              ]
+            },
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2f796e36-475b-8d13-3f94-4f374b8adef4",
+          "name": "Create a change stream.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "options",
+                  "value": "{{options}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
+            "description": null
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
+          "name": "Gets one random question",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {},
+            "url": "{{rootUrl}}/jeopardyQuestions/random",
+            "description": null
+          },
+          "response": []
         }
       ],
       "event": [
