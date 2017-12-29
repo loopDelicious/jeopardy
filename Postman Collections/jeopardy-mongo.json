@@ -892,12 +892,9 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "2d53b9e3-aaf4-4229-8b2e-c1818740ea47",
+                    "id": "75374237-1d52-4bfc-88ed-427e92962993",
                     "type": "text/javascript",
                     "exec": [
-                      "console.log(JSON.parse(pm.variables.get(\"filter\")).categories);",
-                      "console.log(pm.response.json());",
-                      "",
                       "pm.test(\"Selected an instance from the correct category\", function() {",
                       "    var filterCategory = JSON.parse(pm.variables.get(\"filter\")).categories;",
                       "    var responseCategory = pm.response.json().category;",
