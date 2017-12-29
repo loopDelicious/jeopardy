@@ -832,6 +832,25 @@
             {
               "_postman_id": "e85c1ca7-2e8a-c6ff-a224-3bb1b6dbf24b",
               "name": "Gets list of categories",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "74cf09c7-f09d-46bb-9cc9-f1d6fa9de29e",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"response must be valid and have a body\", function () {",
+                      "     ",
+                      "     // assert that the status code is 200",
+                      "     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
+                      "     ",
+                      "     // assert that the response has a valid JSON body",
+                      "     pm.response.to.be.json; ",
+                      "});"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
