@@ -912,9 +912,9 @@
                 ],
                 "body": {},
                 "url": {
-                  "raw": "{{root_url}}/jeopardyQuestions?filter={{filter}}",
+                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
                   "host": [
-                    "{{root_url}}"
+                    "{{rootUrl}}"
                   ],
                   "path": [
                     "jeopardyQuestions"
@@ -922,8 +922,7 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}",
-                      "equals": true
+                      "value": "{{filter}}"
                     }
                   ]
                 },
@@ -1348,30 +1347,30 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
+              "name": "Gets one random question",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": "{{rootUrl}}/jeopardyQuestions/random",
+                "description": null
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
-        },
-        {
-          "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
-          "name": "Gets one random question",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {},
-            "url": "{{rootUrl}}/jeopardyQuestions/random",
-            "description": null
-          },
-          "response": []
         }
       ],
       "event": [
