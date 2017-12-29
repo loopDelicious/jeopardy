@@ -1225,22 +1225,19 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/change-stream?options={{options}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/change-stream?options={{options}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 "change-stream"
               ],
               "query": [
                 {
                   "key": "options",
-                  "value": "{{options}}"
+                  "value": "{{options}}",
+                  "equals": true
                 }
               ]
             },
@@ -1273,7 +1270,7 @@
                 }
               ]
             },
-            "url": "http:///api/jeopardyQuestions/change-stream",
+            "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
             "description": null
           },
           "response": []
@@ -1294,7 +1291,7 @@
               }
             ],
             "body": {},
-            "url": "http:///api/jeopardyQuestions/random",
+            "url": "{{rootUrl}}/jeopardyQuestions/random",
             "description": null
           },
           "response": []
@@ -1315,7 +1312,7 @@
               }
             ],
             "body": {},
-            "url": "http:///api/jeopardyQuestions/categories",
+            "url": "{{rootUrl}}/jeopardyQuestions/categories",
             "description": null
           },
           "response": []
