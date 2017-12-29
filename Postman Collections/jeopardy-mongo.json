@@ -877,6 +877,18 @@
             {
               "_postman_id": "305b39e2-56b6-6dee-46e9-7b70d7371a85",
               "name": "Find first instance of the model matched by filter from the data source.",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "78b6c052-3847-41ca-a8cb-f10a4add8b3d",
+                    "type": "text/javascript",
+                    "exec": [
+                      "console.log(pm.variables.get(\"filter\"));"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
