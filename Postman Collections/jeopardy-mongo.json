@@ -836,7 +836,7 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "74cf09c7-f09d-46bb-9cc9-f1d6fa9de29e",
+                    "id": "8913c19a-a64c-4218-9dac-5aaf4ea19fd3",
                     "type": "text/javascript",
                     "exec": [
                       "pm.test(\"response must be valid and have a body\", function () {",
@@ -846,7 +846,12 @@
                       "     ",
                       "     // assert that the response has a valid JSON body",
                       "     pm.response.to.be.json; ",
-                      "});"
+                      "});",
+                      "",
+                      "// pick a random category and assign it to a variable, to run a check in the next request",
+                      "let categoriesArray = pm.response.json().categories;",
+                      "let randomCategory = categoriesArray[Math.floor(Math.random() * categoriesArray.length)];",
+                      "pm.environment.set(\"randCat\", randomCategory);"
                     ]
                   }
                 }
