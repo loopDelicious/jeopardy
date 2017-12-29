@@ -914,28 +914,25 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/:id?filter={{filter}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/:id?filter={{filter}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 ":id"
               ],
               "query": [
                 {
                   "key": "filter",
-                  "value": "{{filter}}"
+                  "value": "{{filter}}",
+                  "equals": true
                 }
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
