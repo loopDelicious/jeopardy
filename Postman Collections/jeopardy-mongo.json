@@ -815,7 +815,7 @@
               "mode": "raw",
               "raw": "Model instance data"
             },
-            "url": "http:///api/jeopardyQuestions/replaceOrCreate",
+            "url": "{{rootUrl}}/jeopardyQuestions/replaceOrCreate",
             "description": null
           },
           "response": []
