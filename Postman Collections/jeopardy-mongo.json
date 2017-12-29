@@ -836,7 +836,7 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "32f0e647-26cc-4c87-b72f-db9eeba4a30e",
+                    "id": "166342c2-d25a-41e9-a7d1-bfbb71568056",
                     "type": "text/javascript",
                     "exec": [
                       "pm.test(\"response must be valid and have a body\", function () {",
@@ -848,10 +848,11 @@
                       "     pm.response.to.be.json; ",
                       "});",
                       "",
-                      "// pick a random category and assign it to a variable, to run a check in the next request",
+                      "// pick a random category and create a filter for the next request",
                       "let categoriesArray = pm.response.json().categories;",
                       "let randomCategory = categoriesArray[Math.floor(Math.random() * categoriesArray.length)];",
-                      "pm.environment.set(\"filter\", {\"categories\": randomCategory});"
+                      "pm.environment.set(\"filter\", {\"categories\": randomCategory});",
+                      "console.log(pm.variables.get(\"filter\"));"
                     ]
                   }
                 }
