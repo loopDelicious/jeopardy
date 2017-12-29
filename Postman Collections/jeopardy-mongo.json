@@ -791,7 +791,7 @@
               "mode": "raw",
               "raw": "Model instance data"
             },
-            "url": "http:///api/jeopardyQuestions",
+            "url": "{{rootUrl}}/jeopardyQuestions",
             "description": null
           },
           "response": []
