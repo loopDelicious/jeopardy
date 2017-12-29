@@ -689,13 +689,6 @@
       "description": "Folder for jeopardy question tests",
       "item": [
         {
-          "_postman_id": "77496778-950e-d976-32f6-bb4b8468b8e4",
-          "name": "Add a new question",
-          "description": "",
-          "item": [],
-          "_postman_isSubFolder": true
-        },
-        {
           "_postman_id": "daab5468-1783-96fa-8922-01a654a91fb6",
           "name": "Find all instances of the model matched by filter from the data source.",
           "request": {
@@ -1277,7 +1270,7 @@
                 }
               ]
             },
-            "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
+            "url": "http:///api/jeopardyQuestions/change-stream",
             "description": null
           },
           "response": []
@@ -1298,7 +1291,7 @@
               }
             ],
             "body": {},
-            "url": "{{rootUrl}}/jeopardyQuestions/random",
+            "url": "http:///api/jeopardyQuestions/random",
             "description": null
           },
           "response": []
@@ -1319,7 +1312,7 @@
               }
             ],
             "body": {},
-            "url": "{{rootUrl}}/jeopardyQuestions/categories",
+            "url": "http:///api/jeopardyQuestions/categories",
             "description": null
           },
           "response": []
