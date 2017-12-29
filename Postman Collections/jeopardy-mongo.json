@@ -689,6 +689,123 @@
       "description": "Folder for jeopardy question tests",
       "item": [
         {
+          "_postman_id": "053c3a5c-1ca8-2b9a-e281-eb9a11b76b67",
+          "name": "Pick a question and verify category",
+          "description": "",
+          "item": [
+            {
+              "_postman_id": "e85c1ca7-2e8a-c6ff-a224-3bb1b6dbf24b",
+              "name": "Gets list of categories",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "dea04715-f2a9-467d-9dd4-2a7ddc8d850e",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"response must be valid and have a body\", function () {",
+                      "     ",
+                      "     // assert that the status code is 200",
+                      "     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
+                      "     ",
+                      "     // assert that the response has a valid JSON body",
+                      "     pm.response.to.be.json; ",
+                      "});",
+                      "",
+                      "// pick a random category and create a filter for the next request",
+                      "let categoriesArray = pm.response.json().categories;",
+                      "let randomCategory = categoriesArray[Math.floor(Math.random() * categoriesArray.length)];",
+                      "pm.environment.set(\"filter\", JSON.stringify({\"categories\": randomCategory}));",
+                      "// console.log(pm.variables.get(\"filter\"));"
+                    ]
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": "{{rootUrl}}/jeopardyQuestions/categories",
+                "description": null
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "305b39e2-56b6-6dee-46e9-7b70d7371a85",
+              "name": "Find first instance of the model matched by filter from the data source.",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "78b6c052-3847-41ca-a8cb-f10a4add8b3d",
+                    "type": "text/javascript",
+                    "exec": [
+                      "console.log(pm.variables.get(\"filter\"));"
+                    ]
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "75374237-1d52-4bfc-88ed-427e92962993",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Selected an instance from the correct category\", function() {",
+                      "    var filterCategory = JSON.parse(pm.variables.get(\"filter\")).categories;",
+                      "    var responseCategory = pm.response.json().category;",
+                      "    pm.expect(filterCategory).to.be.eql(responseCategory);",
+                      "});"
+                    ]
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions/findOne?filter={{filter}}",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions",
+                    "findOne"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
+            }
+          ],
+          "_postman_isSubFolder": true
+        },
+        {
           "_postman_id": "77496778-950e-d976-32f6-bb4b8468b8e4",
           "name": "ADD and UPDATE a question",
           "description": "",
@@ -820,123 +937,6 @@
                   "});"
                 ]
               }
-            }
-          ],
-          "_postman_isSubFolder": true
-        },
-        {
-          "_postman_id": "053c3a5c-1ca8-2b9a-e281-eb9a11b76b67",
-          "name": "Pick a question and verify category",
-          "description": "",
-          "item": [
-            {
-              "_postman_id": "e85c1ca7-2e8a-c6ff-a224-3bb1b6dbf24b",
-              "name": "Gets list of categories",
-              "event": [
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "dea04715-f2a9-467d-9dd4-2a7ddc8d850e",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"response must be valid and have a body\", function () {",
-                      "     ",
-                      "     // assert that the status code is 200",
-                      "     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants",
-                      "     ",
-                      "     // assert that the response has a valid JSON body",
-                      "     pm.response.to.be.json; ",
-                      "});",
-                      "",
-                      "// pick a random category and create a filter for the next request",
-                      "let categoriesArray = pm.response.json().categories;",
-                      "let randomCategory = categoriesArray[Math.floor(Math.random() * categoriesArray.length)];",
-                      "pm.environment.set(\"filter\", JSON.stringify({\"categories\": randomCategory}));",
-                      "// console.log(pm.variables.get(\"filter\"));"
-                    ]
-                  }
-                }
-              ],
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": "{{rootUrl}}/jeopardyQuestions/categories",
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "305b39e2-56b6-6dee-46e9-7b70d7371a85",
-              "name": "Find first instance of the model matched by filter from the data source.",
-              "event": [
-                {
-                  "listen": "prerequest",
-                  "script": {
-                    "id": "78b6c052-3847-41ca-a8cb-f10a4add8b3d",
-                    "type": "text/javascript",
-                    "exec": [
-                      "console.log(pm.variables.get(\"filter\"));"
-                    ]
-                  }
-                },
-                {
-                  "listen": "test",
-                  "script": {
-                    "id": "75374237-1d52-4bfc-88ed-427e92962993",
-                    "type": "text/javascript",
-                    "exec": [
-                      "pm.test(\"Selected an instance from the correct category\", function() {",
-                      "    var filterCategory = JSON.parse(pm.variables.get(\"filter\")).categories;",
-                      "    var responseCategory = pm.response.json().category;",
-                      "    pm.expect(filterCategory).to.be.eql(responseCategory);",
-                      "});"
-                    ]
-                  }
-                }
-              ],
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/findOne?filter={{filter}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    "findOne"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter",
-                      "value": "{{filter}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
             }
           ],
           "_postman_isSubFolder": true
