@@ -1087,48 +1087,48 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "f72985f0-0c99-4179-9bfa-7c01f19bf0f6",
+              "name": "Replace attributes for a model instance and persist it into the data source.",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "Model instance data"
+                },
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions/:id",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions",
+                    ":id"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{id}}"
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
-        },
-        {
-          "_postman_id": "f72985f0-0c99-4179-9bfa-7c01f19bf0f6",
-          "name": "Replace attributes for a model instance and persist it into the data source.",
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "Model instance data"
-            },
-            "url": {
-              "raw": "{{rootUrl}}/jeopardyQuestions/:id",
-              "host": [
-                "{{rootUrl}}"
-              ],
-              "path": [
-                "jeopardyQuestions",
-                ":id"
-              ],
-              "variable": [
-                {
-                  "key": "id",
-                  "value": "{{id}}"
-                }
-              ]
-            },
-            "description": null
-          },
-          "response": []
         },
         {
           "_postman_id": "f0472253-0dc3-caa9-7974-fbfb9bdbeb95",
