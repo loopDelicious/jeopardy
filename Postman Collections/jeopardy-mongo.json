@@ -888,6 +888,20 @@
                       "console.log(pm.variables.get(\"filter\"));"
                     ]
                   }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "fde3ec55-6b15-4b09-9165-dda9436648f0",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Selected an instance from the correct category\", function() {",
+                      "    var filterCategory = JSON.parse(pm.variables.get(\"filter\")).categories;",
+                      "    var responseCategory = pm.response.json().category;",
+                      "    pm.expect(filter).to.be.eql(responseCategory);",
+                      "});"
+                    ]
+                  }
                 }
               ],
               "request": {
