@@ -828,7 +828,29 @@
           "_postman_id": "053c3a5c-1ca8-2b9a-e281-eb9a11b76b67",
           "name": "Pick a question and verify category",
           "description": "",
-          "item": [],
+          "item": [
+            {
+              "_postman_id": "e85c1ca7-2e8a-c6ff-a224-3bb1b6dbf24b",
+              "name": "Gets list of categories",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": "{{rootUrl}}/jeopardyQuestions/categories",
+                "description": null
+              },
+              "response": []
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
@@ -1331,27 +1353,6 @@
             ],
             "body": {},
             "url": "{{rootUrl}}/jeopardyQuestions/random",
-            "description": null
-          },
-          "response": []
-        },
-        {
-          "_postman_id": "e85c1ca7-2e8a-c6ff-a224-3bb1b6dbf24b",
-          "name": "Gets list of categories",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "body": {},
-            "url": "{{rootUrl}}/jeopardyQuestions/categories",
             "description": null
           },
           "response": []
