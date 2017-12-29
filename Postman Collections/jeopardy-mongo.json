@@ -705,21 +705,18 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions?filter={{filter}}",
+              "raw": "{{root_url}}/jeopardyQuestions?filter={{filter}}",
               "host": [
-                "http:"
+                "{{root_url}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions"
               ],
               "query": [
                 {
                   "key": "filter",
-                  "value": "{{filter}}"
+                  "value": "{{filter}}",
+                  "equals": true
                 }
               ]
             },
