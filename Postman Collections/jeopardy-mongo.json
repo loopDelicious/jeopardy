@@ -1111,22 +1111,19 @@
             ],
             "body": {},
             "url": {
-              "raw": "http:///api/jeopardyQuestions/findOne?filter={{filter}}",
+              "raw": "{{rootUrl}}/jeopardyQuestions/findOne?filter={{filter}}",
               "host": [
-                "http:"
+                "{{rootUrl}}"
               ],
-              "port": "",
               "path": [
-                "",
-                "",
-                "api",
                 "jeopardyQuestions",
                 "findOne"
               ],
               "query": [
                 {
                   "key": "filter",
-                  "value": "{{filter}}"
+                  "value": "{{filter}}",
+                  "equals": true
                 }
               ]
             },
