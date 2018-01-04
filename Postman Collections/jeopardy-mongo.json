@@ -522,8 +522,7 @@
               "query": [
                 {
                   "key": "where",
-                  "value": "{{where}}",
-                  "equals": true
+                  "value": "{{where}}"
                 }
               ]
             },
