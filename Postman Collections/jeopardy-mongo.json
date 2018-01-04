@@ -700,13 +700,13 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "300820a9-307b-4d84-864b-b044f09ac8ba",
+                    "id": "3dd0c17e-9fab-4589-813d-561717cb49e4",
                     "type": "text/javascript",
                     "exec": [
-                      "let randoId = pm.response.JSON().questions[0]._id;",
+                      "let randoId = pm.response.json().questions[0]._id;",
                       "pm.environment.set(\"randomID\", randoId);",
                       "",
-                      "let randoRound = pm.response.JSON().questions[0]._id;",
+                      "let randoRound = pm.response.json().questions[0]._id;",
                       "pm.environment.set(\"randomRound\", randoRound);",
                       ""
                     ]
