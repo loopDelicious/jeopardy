@@ -734,6 +734,21 @@
             {
               "_postman_id": "dead80b3-dd9f-bcc7-fb48-aaeefb60e5a9",
               "name": "Check whether a model instance exists in the data source.",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "ed07d7d7-807e-4aaa-beea-8f2b498aa912",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Question exists\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData.exists).to.eql(true);",
+                      "});"
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
@@ -760,7 +775,7 @@
                   "variable": [
                     {
                       "key": "id",
-                      "value": "{{id}}"
+                      "value": "{{randomID}}"
                     }
                   ]
                 },
