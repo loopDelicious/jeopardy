@@ -702,14 +702,14 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "47ce9e82-a72d-4796-9ffb-9bf380935ca6",
+                    "id": "71e3d66e-31b6-4a00-a6c5-515cebaf0e87",
                     "type": "text/javascript",
                     "exec": [
                       "let randoId = pm.response.json().questions[0]._id;",
                       "pm.environment.set(\"randomID\", randoId);",
                       "",
                       "let randoDate = pm.response.json().questions[0].air_date;",
-                      "pm.environment.set(\"randomAirDate\", randoDate);",
+                      "pm.environment.set(\"randomAirDateFilter\", JSON.stringify({\"air_date\":randoDate}));",
                       ""
                     ]
                   }
