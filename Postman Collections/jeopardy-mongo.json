@@ -692,7 +692,29 @@
           "_postman_id": "18a19b31-3435-7dbb-dc3c-f5e8fb1a435f",
           "name": "Random question check",
           "description": "",
-          "item": [],
+          "item": [
+            {
+              "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
+              "name": "Gets one random question",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": "{{rootUrl}}/jeopardyQuestions/random",
+                "description": null
+              },
+              "response": []
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
@@ -1402,27 +1424,6 @@
                   ]
                 },
                 "url": "{{rootUrl}}/jeopardyQuestions/change-stream",
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
-              "name": "Gets one random question",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": "{{rootUrl}}/jeopardyQuestions/random",
                 "description": null
               },
               "response": []
