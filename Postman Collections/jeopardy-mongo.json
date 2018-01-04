@@ -354,8 +354,8 @@
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
@@ -438,8 +438,8 @@
               ],
               "variable": [
                 {
-                  "value": "{{id}}",
-                  "id": "id"
+                  "key": "id",
+                  "value": "{{id}}"
                 }
               ]
             },
@@ -1084,6 +1084,42 @@
                   ]
                 },
                 "description": ""
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "75af9e0d-d44a-8390-405c-218cb230c4e7",
+              "name": "Find all instances of the model matched by filter from the data source. copy",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": null
               },
               "response": []
             },
