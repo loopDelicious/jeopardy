@@ -943,13 +943,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "0a370855-00de-35f6-db5f-a21047ee8d5d",
-          "name": "Retrieve all questions by filter",
-          "description": "",
-          "item": [],
-          "_postman_isSubFolder": true
-        },
-        {
           "_postman_id": "77496778-950e-d976-32f6-bb4b8468b8e4",
           "name": "ADD and UPDATE a question",
           "description": "",
