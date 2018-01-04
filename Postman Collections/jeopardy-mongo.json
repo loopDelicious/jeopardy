@@ -696,6 +696,23 @@
             {
               "_postman_id": "e114441d-7ea8-7c31-92df-1cd43a66088c",
               "name": "Gets one random question",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "300820a9-307b-4d84-864b-b044f09ac8ba",
+                    "type": "text/javascript",
+                    "exec": [
+                      "let randoId = pm.response.JSON().questions[0]._id;",
+                      "pm.environment.set(\"randomID\", randoId);",
+                      "",
+                      "let randoRound = pm.response.JSON().questions[0]._id;",
+                      "pm.environment.set(\"randomRound\", randoRound);",
+                      ""
+                    ]
+                  }
+                }
+              ],
               "request": {
                 "method": "GET",
                 "header": [
