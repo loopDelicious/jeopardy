@@ -702,7 +702,7 @@
                 {
                   "listen": "test",
                   "script": {
-                    "id": "71e3d66e-31b6-4a00-a6c5-515cebaf0e87",
+                    "id": "f0ded677-7cff-4dfd-8c65-d2208c22e059",
                     "type": "text/javascript",
                     "exec": [
                       "let randoId = pm.response.json().questions[0]._id;",
