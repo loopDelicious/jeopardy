@@ -91,10 +91,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "Model instance data"
+              "raw": ""
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": ""
+            "description": null
           },
           "response": []
         },
@@ -336,7 +336,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "An object of model property name/value pairs"
+              "raw": ""
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id",
@@ -358,7 +358,7 @@
                 }
               ]
             },
-            "description": ""
+            "description": null
           },
           "response": []
         },
@@ -419,7 +419,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "Model instance data"
+              "raw": ""
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id/replace",
@@ -442,7 +442,7 @@
                 }
               ]
             },
-            "description": ""
+            "description": null
           },
           "response": []
         },
@@ -1022,7 +1022,7 @@
                     }
                   ]
                 },
-                "description": ""
+                "description": null
               },
               "response": []
             },
@@ -1058,7 +1058,7 @@
                     }
                   ]
                 },
-                "description": ""
+                "description": null
               },
               "response": []
             },
@@ -1113,12 +1113,11 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}",
-                      "equals": true
+                      "value": "{{filter}}"
                     }
                   ]
                 },
-                "description": ""
+                "description": null
               },
               "response": []
             },
