@@ -91,10 +91,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -419,7 +419,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id/replace",
@@ -442,7 +442,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -1113,11 +1113,12 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}"
+                      "value": "{{filter}}",
+                      "equals": true
                     }
                   ]
                 },
-                "description": null
+                "description": ""
               },
               "response": []
             },
