@@ -810,7 +810,7 @@
                 ],
                 "body": {},
                 "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/count?where={{randomAirDate}}",
+                  "raw": "{{rootUrl}}/jeopardyQuestions/count?where={\"airdate\": {{randomAirDateFilter}}}",
                   "host": [
                     "{{rootUrl}}"
                   ],
@@ -821,7 +821,7 @@
                   "query": [
                     {
                       "key": "where",
-                      "value": "{{randomAirDate}}",
+                      "value": "{\"airdate\": {{randomAirDateFilter}}}",
                       "equals": true
                     }
                   ]
