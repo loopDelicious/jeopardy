@@ -181,8 +181,7 @@
               "query": [
                 {
                   "key": "where",
-                  "value": "{{where}}",
-                  "equals": true
+                  "value": "{{where}}"
                 }
               ]
             },
@@ -354,8 +353,8 @@
               ],
               "variable": [
                 {
-                  "key": "id",
-                  "value": "{{id}}"
+                  "value": "{{id}}",
+                  "id": "id"
                 }
               ]
             },
@@ -522,8 +521,7 @@
               "query": [
                 {
                   "key": "where",
-                  "value": "{{where}}",
-                  "equals": true
+                  "value": "{{where}}"
                 }
               ]
             },
