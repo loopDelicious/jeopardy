@@ -948,42 +948,6 @@
           "description": "",
           "item": [
             {
-              "_postman_id": "daab5468-1783-96fa-8922-01a654a91fb6",
-              "name": "Find all instances of the model matched by filter from the data source.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter",
-                      "value": "{{filter}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": ""
-              },
-              "response": []
-            },
-            {
               "_postman_id": "92b274db-5320-722c-9623-f5b369310feb",
               "name": "Find all instances of the model matched by filter from the data source. copy",
               "request": {
