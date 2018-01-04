@@ -979,6 +979,42 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "3c1cf21f-e0fe-20e3-38f5-493e63ee89ca",
+              "name": "Find all instances of the model matched by filter from the data source. copy",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
