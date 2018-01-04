@@ -438,8 +438,8 @@
               ],
               "variable": [
                 {
-                  "key": "id",
-                  "value": "{{id}}"
+                  "value": "{{id}}",
+                  "id": "id"
                 }
               ]
             },
