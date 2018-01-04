@@ -163,7 +163,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "An object of model property name/value pairs"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/upsertWithWhere?where={{where}}",
@@ -185,7 +185,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -293,7 +293,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id",
@@ -315,7 +315,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
