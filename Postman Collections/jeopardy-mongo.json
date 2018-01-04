@@ -67,10 +67,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": null
+            "description": ""
           },
           "response": []
         },
