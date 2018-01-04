@@ -91,10 +91,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -336,7 +336,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "An object of model property name/value pairs"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id",
@@ -358,7 +358,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -1113,11 +1113,12 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}"
+                      "value": "{{filter}}",
+                      "equals": true
                     }
                   ]
                 },
-                "description": null
+                "description": ""
               },
               "response": []
             },
