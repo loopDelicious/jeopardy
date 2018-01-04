@@ -784,6 +784,43 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "56fd4dc7-fbd6-bc56-9703-aa2ee431e493",
+              "name": "Count instances of the model matched by where from the data source.",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions/count?where={{where}}",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions",
+                    "count"
+                  ],
+                  "query": [
+                    {
+                      "key": "where",
+                      "value": "{{where}}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
@@ -909,45 +946,7 @@
           "_postman_id": "0a370855-00de-35f6-db5f-a21047ee8d5d",
           "name": "Retrieve all questions by filter",
           "description": "",
-          "item": [
-            {
-              "_postman_id": "56fd4dc7-fbd6-bc56-9703-aa2ee431e493",
-              "name": "Count instances of the model matched by where from the data source.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/count?where={{where}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    "count"
-                  ],
-                  "query": [
-                    {
-                      "key": "where",
-                      "value": "{{where}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
-            }
-          ],
+          "item": [],
           "_postman_isSubFolder": true
         },
         {
