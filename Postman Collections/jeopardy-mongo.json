@@ -730,6 +730,43 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "dead80b3-dd9f-bcc7-fb48-aaeefb60e5a9",
+              "name": "Check whether a model instance exists in the data source.",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions/:id/exists",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions",
+                    ":id",
+                    "exists"
+                  ],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "{{id}}"
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
@@ -956,43 +993,6 @@
                   "raw": "Model instance data"
                 },
                 "url": "{{rootUrl}}/jeopardyQuestions",
-                "description": null
-              },
-              "response": []
-            },
-            {
-              "_postman_id": "dead80b3-dd9f-bcc7-fb48-aaeefb60e5a9",
-              "name": "Check whether a model instance exists in the data source.",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions/:id/exists",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions",
-                    ":id",
-                    "exists"
-                  ],
-                  "variable": [
-                    {
-                      "key": "id",
-                      "value": "{{id}}"
-                    }
-                  ]
-                },
                 "description": null
               },
               "response": []
