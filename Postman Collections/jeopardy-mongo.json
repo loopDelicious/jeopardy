@@ -820,6 +820,51 @@
                 "description": null
               },
               "response": []
+            },
+            {
+              "_postman_id": "c2ec6f82-831a-521c-fb6b-61288199cb1e",
+              "name": "Count instances copy",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "df1d178e-7917-4704-83b2-8c73ea92d8da",
+                    "type": "text/javascript",
+                    "exec": [
+                      ""
+                    ]
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{publicEndpoint}}/jeopardyQuestions/count?where={\"category\": \"HISTORY\"}",
+                  "host": [
+                    "{{publicEndpoint}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions",
+                    "count"
+                  ],
+                  "query": [
+                    {
+                      "key": "where",
+                      "value": "{\"category\": \"HISTORY\"}",
+                      "equals": true
+                    }
+                  ]
+                },
+                "description": "Count instances of the model matched by where from the data source."
+              },
+              "response": []
             }
           ],
           "_postman_isSubFolder": true
