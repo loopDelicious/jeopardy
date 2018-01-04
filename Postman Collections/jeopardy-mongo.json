@@ -67,10 +67,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -91,10 +91,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions",
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -139,10 +139,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": "http:///api/jeopardyQuestions/replaceOrCreate",
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -163,7 +163,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "An object of model property name/value pairs"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/upsertWithWhere?where={{where}}",
@@ -185,7 +185,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -336,7 +336,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "An object of model property name/value pairs"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id",
@@ -358,7 +358,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -419,7 +419,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "Model instance data"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/:id/replace",
@@ -442,7 +442,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -503,7 +503,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "An object of model property name/value pairs"
             },
             "url": {
               "raw": "http:///api/jeopardyQuestions/update?where={{where}}",
@@ -525,7 +525,7 @@
                 }
               ]
             },
-            "description": null
+            "description": ""
           },
           "response": []
         },
@@ -1058,7 +1058,7 @@
                     }
                   ]
                 },
-                "description": null
+                "description": ""
               },
               "response": []
             },
@@ -1113,11 +1113,12 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}"
+                      "value": "{{filter}}",
+                      "equals": true
                     }
                   ]
                 },
-                "description": null
+                "description": ""
               },
               "response": []
             },
