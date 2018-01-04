@@ -846,9 +846,9 @@
                 ],
                 "body": {},
                 "url": {
-                  "raw": "{{publicEndpoint}}/jeopardyQuestions/count?where={\"category\": \"HISTORY\"}",
+                  "raw": "{{rootUrl}}/jeopardyQuestions/count?where={{randomAirDate}}",
                   "host": [
-                    "{{publicEndpoint}}"
+                    "{{rootUrl}}"
                   ],
                   "path": [
                     "jeopardyQuestions",
@@ -857,7 +857,7 @@
                   "query": [
                     {
                       "key": "where",
-                      "value": "{\"category\": \"HISTORY\"}",
+                      "value": "{{randomAirDate}}",
                       "equals": true
                     }
                   ]
