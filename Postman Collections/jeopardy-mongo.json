@@ -823,7 +823,7 @@
             },
             {
               "_postman_id": "c2ec6f82-831a-521c-fb6b-61288199cb1e",
-              "name": "Count instances copy",
+              "name": "Count instances",
               "event": [
                 {
                   "listen": "prerequest",
