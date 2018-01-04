@@ -979,42 +979,6 @@
                 "description": null
               },
               "response": []
-            },
-            {
-              "_postman_id": "92b274db-5320-722c-9623-f5b369310feb",
-              "name": "Find all instances of the model matched by filter from the data source. copy",
-              "request": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {},
-                "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
-                  "host": [
-                    "{{rootUrl}}"
-                  ],
-                  "path": [
-                    "jeopardyQuestions"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter",
-                      "value": "{{filter}}",
-                      "equals": true
-                    }
-                  ]
-                },
-                "description": null
-              },
-              "response": []
             }
           ],
           "_postman_isSubFolder": true
@@ -1120,6 +1084,42 @@
                     {
                       "key": "id",
                       "value": "{{id}}"
+                    }
+                  ]
+                },
+                "description": null
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "92b274db-5320-722c-9623-f5b369310feb",
+              "name": "Find all instances of the model matched by filter from the data source. copy",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json, application/xml, text/xml, application/javascript, text/javascript"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {},
+                "url": {
+                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
+                  "host": [
+                    "{{rootUrl}}"
+                  ],
+                  "path": [
+                    "jeopardyQuestions"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "{{filter}}",
+                      "equals": true
                     }
                   ]
                 },
