@@ -847,7 +847,7 @@
                 ],
                 "body": {},
                 "url": {
-                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{filter}}",
+                  "raw": "{{rootUrl}}/jeopardyQuestions?filter={{randomAirDate}}",
                   "host": [
                     "{{rootUrl}}"
                   ],
@@ -857,7 +857,7 @@
                   "query": [
                     {
                       "key": "filter",
-                      "value": "{{filter}}",
+                      "value": "{{randomAirDate}}",
                       "equals": true
                     }
                   ]
